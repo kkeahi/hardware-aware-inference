@@ -2,18 +2,18 @@
 Analysis and rescheduling of YOLO inference using NVIDIA GPU profiling tools to reduce hardware-level bottlenecks and tail latency
 
 
-## Virtual Environment
-Helpful for running pip inference / YOLO
+## Windows Setup
+Install latest NVIDIA GPU driver
+https://www.nvidia.com/en-us/drivers/
 
-Initialize:
-`py -3.11 -m venv .venv`
+Install Visual Studio 2022 (not 2026) with "Desktop development with C++" workload https://aka.ms/vs/17/release/vs_community.exe
 
-Activate:
-`.venv\Scripts\activate`
+Install CUDA Toolkit https://developer.nvidia.com/cuda-downloads
+- Test installation with `nvcc --version`
 
-Deactivate:
-`deactivate`
+Install Python https://www.python.org/downloads/windows/
 
-## YOLO Setup
-Python version <3.12 needed for inference package  
-Installation: `pip install inference`
+Install PyTorch (with CUDA) https://pytorch.org/get-started/locally/
+- Get CUDA version with `nvidia-smi`
+
+Install Ultralytics `pip install ultralytics`
